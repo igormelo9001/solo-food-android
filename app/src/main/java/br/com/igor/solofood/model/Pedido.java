@@ -6,8 +6,16 @@ package br.com.igor.solofood.model;
 
 public class Pedido {
     private int quantidade;
-    private String endereco;
-    private String numeroEnd;
+    private int usuarioId;
+
+    public int getUsuarioId() {
+        return usuarioId;
+    }
+
+    public void setUsuarioId(int usuarioId) {
+        this.usuarioId = usuarioId;
+    }
+
 
     public int getQuantidade() {
         return quantidade;
@@ -16,20 +24,5 @@ public class Pedido {
     public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
     }
-
-    public String getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
-    }
-
-    public String getNumeroEnd() {
-        return numeroEnd;
-    }
-
-    public void setNumeroEnd(String numeroEnd) {
-        this.numeroEnd = numeroEnd;
-    }
+    
 }
